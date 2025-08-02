@@ -28,6 +28,7 @@
             vm.isConnected = false;
             vm.avatarStatus = 'Disconnected.';
             vm.promptText = '';
+            vm.apiKey = '';
             vm.textForAvatar = '';
             vm.currentPromptIndex = 0;
         }

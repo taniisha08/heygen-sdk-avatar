@@ -66,6 +66,14 @@ input#promptText {
     background-color: #fff;
 }
 
+input#apiKey {
+    padding: 0.6rem;
+    width: 400px;
+    border: 1px solid #d4d4d8;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
 button {
     padding: 0.6rem 1.2rem;
     border: none;

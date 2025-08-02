@@ -26,6 +26,7 @@
             on-start-speaking="mainVm.handleStart()"
             on-stop-speaking="mainVm.handleStop()"
             on-session-error="mainVm.handleSessionError(message)"
+            api-key="mainVm.apiKey"
           >
           </bot-avatar>
         </div>
@@ -54,6 +55,15 @@
             placeholder="The next question will appear here"
           />
           <button ng-click="mainVm.speak()">Ask Next Question</button>
+        </div>
+
+        <div ng-if="!mainVm.isConnected">
+          <input
+            type="text"
+            id="apiKey"
+            ng-model="mainVm.apiKey"
+            placeholder="Paste your api key here"
+          />
         </div>
       </div>
     </div>
